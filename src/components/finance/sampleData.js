@@ -1,10 +1,25 @@
 export const scopes = {
   'money': [
     {
-      quoteTitle: '23902',
-      quoteValue: '2342',
+      quoteTitle: 'DOW',
+      quoteValue: '23,129.12',
       quoteChange: '5235',
-    }
+    },
+    {
+      quoteTitle: 'S&P 500',
+      quoteValue: '120,129.81',
+      quoteChange: '7456',
+    },
+    {
+      quoteTitle: 'NASDAQ',
+      quoteValue: '129.2',
+      quoteChange: '353',
+    },
+    {
+      quoteTitle: 'WTI Futures',
+      quoteValue: '91.22',
+      quoteChange: '132',
+    },
   ],
   'finances': [
     {
@@ -15,7 +30,7 @@ export const scopes = {
   ],
   'global': [
     {
-      quoteTitle: '23902',
+      quoteTitle: 'De & me',
       quoteValue: '2342',
       quoteChange: '5235',
     }

@@ -16,7 +16,7 @@ const NavBottom = () => {
         const title = <>
           {name}
           {icon[status]}
-          {status == 'increased' ? '+' : '-'}
+          {status === 'increased' ? '+' : '-'}
           {changedPersent}
         </>
         return (

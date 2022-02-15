@@ -10,7 +10,7 @@ export default function FinanceTopStories() {
 
   useEffect(() => {
     const { currencies } = navbarData;
-    const selectedCurrency = currencies.filter(item => item.name == 'RI')
+    const selectedCurrency = currencies.filter(item => item.name === 'RI')
     setCurrency(selectedCurrency[0]);
   }, []);
 
@@ -23,12 +23,12 @@ export default function FinanceTopStories() {
     <Box sx={{ position: 'relative', width: 610, overflow: 'hidden', maxWidth: '95vw' }}>
       <Box className={styles.sizes}>
         <Grid container direction="column" justifyContent="space-evenly" p={10} className={styles.banner}>
-          <Typography variant='p' component='div'>IRAN TODAY</Typography>
+          <Typography variant='p' component='div'>IRAN TODAY</Typography> {/* change p from there */}
           <Typography variant='h5' component='h1'>A Peek Into The Markets: US Stock Futures Lower Amid Ukraine Tensions</Typography>
-          <Typography variant='p' component='div' style={{ display: 'flex', alignItems: 'center' }}>
+          <Typography variant='p' component='div' style={{ display: 'flex', alignItems: 'center' }}> {/* change p from there */}
             {currency?.name}
             {icon[currency?.status]}
-            {currency?.status == 'increased' ? '+' : '-'}
+            {currency?.status === 'increased' ? '+' : '-'}
             {currency?.changedPersent}
           </Typography>
         </Grid>
@@ -40,6 +40,7 @@ export default function FinanceTopStories() {
             width: 468,
           }}
           src='./assests/images/banner-02.jpg'
+          alt='banner!'
           className={styles.sizes}
         />
       </Box>
