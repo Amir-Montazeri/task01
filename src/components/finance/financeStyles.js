@@ -1,6 +1,6 @@
 import { makeStyles } from '@material-ui/core/styles';
 
-const useHomeStyles = makeStyles({
+const useFinanceStyles = makeStyles({
   card: {
     margin: 15,
     boxShadow: '0 0 10px rgba(1, 1, 1, .3)',
@@ -30,11 +30,8 @@ const useHomeStyles = makeStyles({
   bottomFields: {
     padding: 5,
     width: '49%',
-    color: '#fff',
-    ['> *']: {
-      paddingTop: 10
-    }
+    color: '#fff'
   }
 });
 
-export default useHomeStyles;
+export default useFinanceStyles;

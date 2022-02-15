@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { Box, Grid, Typography } from '@material-ui/core'
-import useHomeStyles from './HomeStyles';
 import { ArrowDropDown, ArrowDropUp } from '@material-ui/icons';
+import useFinanceStyles from './financeStyles';
 import { navbarData } from '../../data/sample';
 
-function HomeLeftSection() {
+export default function FinanceTopStories() {
   const [currency, setCurrency] = useState(null);
-  const styles = useHomeStyles();
+  const styles = useFinanceStyles();
 
   useEffect(() => {
     const { currencies } = navbarData;
@@ -61,5 +61,3 @@ function HomeLeftSection() {
     </Box>
   );
 }
-
-export default HomeLeftSection

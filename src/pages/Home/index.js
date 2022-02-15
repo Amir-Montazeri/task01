@@ -1,23 +1,14 @@
 import React from 'react';
-import { Grid, Box } from '@material-ui/core';
-import useHomeStyles from './HomeStyles';
-import HomeLeftSection from './HomeLeftSection';
-import HomeRightSection from './HomeRightSection';
+import { Grid } from '@material-ui/core';
+import { Finance } from '../../components';
 
 const Home = () => {
-  const styles = useHomeStyles();
-
   return (
-    <Box>
+    <div>
       <Grid container justifyContent='center' wrap='wrap'>
-        <Grid item className={styles.card}>
-          <HomeLeftSection />
-        </Grid>
-        <Grid item className={styles.card}>
-          <HomeRightSection />
-        </Grid>
+        <Finance />
       </Grid>
-    </Box>
+    </div>
   )
 }
 
