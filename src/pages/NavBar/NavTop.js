@@ -1,9 +1,15 @@
 import React from 'react';
 import { Grid, Box } from '@material-ui/core';
+import { Instagram, LinkedIn } from '@material-ui/icons'
 import { ItemLink } from '../../components';
 import { navbarData } from '../../data/sample';
 
 const NavTop = () => {
+  const icon = {
+    instagram: <Instagram />,
+    linkedin: <LinkedIn />
+  }
+
   return (
     <Grid container justifyContent='space-between' style={{ padding: '3px 10px' }}>
       <Box sx={{
@@ -12,7 +18,7 @@ const NavTop = () => {
         display: 'flex',
         justifyContent: 'space-between'
       }}>
-        {navbarData.socialMedias.map(({ name, link }) => <ItemLink title={name} link={link} key={name} />)}
+        {navbarData.socialMedias.map(({ name, link }) => <ItemLink title={name} link={link} icon={icon[name]} key={name} />)}
       </Box>
       <Box sx={{
         width: '30%',

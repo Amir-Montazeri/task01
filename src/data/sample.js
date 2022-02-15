@@ -91,6 +91,12 @@ export const navbarData = {
       link: '/currency/ETH'
     },
     {
+      name: 'RI',
+      status: 'increased',
+      changedPersent: '23.8%',
+      link: '/currency/RI'
+    },
+    {
       name: 'BA',
       status: 'decreased',
       changedPersent: '9.5%',

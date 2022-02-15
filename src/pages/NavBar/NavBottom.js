@@ -8,12 +8,17 @@ const NavBottom = () => {
   const icon = {
     increased: <ArrowDropDown />,
     decreased: <ArrowDropUp />
-  }
+  };
 
   return (
     <Box>
       {navbarData.currencies.map(({ name, status, changedPersent, link }) => {
-        const title = `${name} ${<ArrowDropDown />} ${status == 'increased' ? '+' : '-' + changedPersent}`
+        const title = <>
+          {name}
+          {icon[status]}
+          {status == 'increased' ? '+' : '-'}
+          {changedPersent}
+        </>
         return (
           <ItemLink title={title} link={link} key={name} />
         )

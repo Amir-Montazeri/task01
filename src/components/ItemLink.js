@@ -2,24 +2,26 @@ import { Button } from '@material-ui/core';
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const RowListRendering = ({ title, icon, link, middleIcon }) => {
+const RowListRendering = ({ title, icon, link }) => {
   const renderSocialMediaButton = (title, icon, link) => (
     <a href={link}>
-      <p variant='contained' size='small'>
+      <Button variant='contained' size='small' startIcon={icon || null}>
         {title}
-      </p>
+      </Button>
     </a>
   );
 
   const renderLocalButton = (title, icon, link) => (
-      <p>
+    <Link to={link}>
+      <Button>
         {title}
-      </p>
+      </Button>
+    </Link>
   );
 
   return !link.includes('https') ?
     renderLocalButton(title, null, link) :
-    renderSocialMediaButton(title, null, link)
+    renderSocialMediaButton(title, icon, link)
 };
 
 export default RowListRendering;
