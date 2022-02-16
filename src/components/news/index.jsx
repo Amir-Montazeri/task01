@@ -1,11 +1,14 @@
 import React from 'react';
 import { Grid } from '@material-ui/core';
+import useNewsStyles from './newsStyles';
 import { allNews } from './sampleData';
 
 export default function News() {
-  return allNews.map(({title, content, tags, bannerUrl}) => (
-    <Grid item xs={12} sm={6} style={{ background: 'red' }} key={content}>
-      {title}
+  const styles = useNewsStyles();
+
+  return allNews.map(({ title, content, category, tags, coverUrl, id }) => (
+    <Grid item xs={12} key={id} className={styles.banner}>
+
     </Grid>
   ))
 };

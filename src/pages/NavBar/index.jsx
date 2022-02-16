@@ -1,13 +1,10 @@
 import React from 'react';
-// import { Grid } from '@material-ui/core';
 import { Box } from '@material-ui/core';
-import NavTop from './NavTop';
-import NavMiddle from './NavMiddle';
-import NavBottom from './NavBottom';
+import { NavTop, NavBottom, NavMiddle } from '../../components'
 
 const NavBar = () => {
   return (
-    <Box>
+    <Box bgcolor={'rgba(1, 1, 1, .3)'}>
       <NavTop />
       <NavMiddle />
       <NavBottom />

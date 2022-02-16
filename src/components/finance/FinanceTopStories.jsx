@@ -15,17 +15,17 @@ export default function FinanceTopStories() {
   }, []);
 
   const icon = {
-    increased: <ArrowDropDown />,
-    decreased: <ArrowDropUp />
+    increased: <ArrowDropUp />,
+    decreased: <ArrowDropDown />
   };
 
   return (
     <Box sx={{ position: 'relative', width: 610, overflow: 'hidden', maxWidth: '95vw' }}>
       <Box className={styles.sizes}>
         <Grid container direction="column" justifyContent="space-evenly" p={10} className={styles.banner}>
-          <Typography variant='p' component='div'>IRAN TODAY</Typography> {/* change p from there */}
+          <Typography variant='body1' component='div'>IRAN TODAY</Typography>
           <Typography variant='h5' component='h1'>A Peek Into The Markets: US Stock Futures Lower Amid Ukraine Tensions</Typography>
-          <Typography variant='p' component='div' style={{ display: 'flex', alignItems: 'center' }}> {/* change p from there */}
+          <Typography variant='subtitle2' component='div' style={{ display: 'flex', alignItems: 'center', opacity: '.8' }}>
             {currency?.name}
             {icon[currency?.status]}
             {currency?.status === 'increased' ? '+' : '-'}

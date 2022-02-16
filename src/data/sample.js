@@ -101,6 +101,42 @@ export const navbarData = {
       status: 'decreased',
       changedPersent: '9.5%',
       link: '/currency/BA'
+    },
+    {
+      name: 'ASH',
+      status: 'decreased',
+      changedPersent: '3.82%',
+      link: '/currency/ASH'
+    },
+    {
+      name: 'AS',
+      status: 'increased',
+      changedPersent: '231.8%',
+      link: '/currency/AS'
+    },
+    {
+      name: 'LAS',
+      status: 'increased',
+      changedPersent: '9.55%',
+      link: '/currency/LAS'
+    },
+    {
+      name: 'AM',
+      status: 'decreased',
+      changedPersent: '30.82%',
+      link: '/currency/AM'
+    },
+    {
+      name: 'LOP',
+      status: 'increased',
+      changedPersent: '2.8%',
+      link: '/currency/LOP'
+    },
+    {
+      name: 'MIA',
+      status: 'decreased',
+      changedPersent: '91.55%',
+      link: '/currency/MIA'
     }
   ]
 };

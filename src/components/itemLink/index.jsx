@@ -4,8 +4,13 @@ import { Link } from 'react-router-dom';
 
 const RowListRendering = ({ title, icon, link }) => {
   const renderSocialMediaButton = (title, icon, link) => (
-    <a href={link}>
-      <Button variant='contained' size='small' startIcon={icon || null}>
+    <a href={link} style={{ marginRight: 5 }}>
+      <Button
+        variant='contained'
+        size='small'
+        startIcon={icon || null}
+        style={{ background: 'rgba(241, 241, 241, 0.22)' }}
+      >
         {title}
       </Button>
     </a>
