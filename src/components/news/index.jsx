@@ -9,10 +9,10 @@ export default function News() {
   return allNews.map(({ title, content, category, tags, coverUrl, id }) => (
     <Grid item xs={12} key={id} className={styles.banner}>
       <Box className={styles.content}>
-
+        Hiii
       </Box>
       <Box className={styles.cover}>
-      
+        Byyye
       </Box>
     </Grid>
   ))
