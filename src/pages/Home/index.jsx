@@ -19,6 +19,11 @@ const Home = () => {
       <Grid container justifyContent='center'>
         <ForceNews />
       </Grid>
+      <Grid container justifyContent='center'>
+        <Typography variant='h2' component='span' className={styles.title}>
+          Every News
+        </Typography>
+      </Grid>
       <Grid container direction='column'>
         <News />
       </Grid>

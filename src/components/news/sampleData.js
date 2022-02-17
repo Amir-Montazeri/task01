@@ -1,4 +1,4 @@
-export const allNews = [
+const allNews = [
   {
     title: '',
     content: '',
@@ -40,3 +40,5 @@ export const allNews = [
     id: 4
   }
 ];
+
+export default allNews;

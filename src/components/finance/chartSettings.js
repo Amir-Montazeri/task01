@@ -1,8 +1,11 @@
 import Highcharts from 'highcharts';
 
 const url = 'https://cdn.jsdelivr.net/gh/highcharts/highcharts@v7.0.0/samples/data/usdeur.json';
-const settings = {
-  chart: {
+
+export default function(currency) {
+  return (
+  {
+    chart: {
     zoomType: 'x',
     renderTo: 'chart',
     backgroundColor: 'transparent',
@@ -18,7 +21,7 @@ const settings = {
     }
   },
   title: {
-    text: 'selected currency\'s Chart',
+    text: `${currency} selected currency\'s Chart`,
     style: {
       color: '#fff'
     }
@@ -88,6 +91,6 @@ const settings = {
     type: 'area',
     name: 'Custom Content'
   }]
+  }
+  )
 };
-
-export default settings;

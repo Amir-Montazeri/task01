@@ -49,7 +49,7 @@ export default function FinanceMarketCard() {
         ))}
       </Grid>
       <div>
-        <Chart />
+        <Chart currency={currentQuote} />
       </div>
     </Box>
   );

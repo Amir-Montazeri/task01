@@ -9,7 +9,7 @@ const RowListRendering = ({ title, icon, link }) => {
         variant='contained'
         size='small'
         startIcon={icon || null}
-        style={{ background: 'rgba(241, 241, 241, 0.22)' }}
+        style={{ background: 'rgba(241, 241, 241, 0.22)', color: '#fff' }}
       >
         {title}
       </Button>
