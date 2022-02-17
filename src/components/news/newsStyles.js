@@ -2,20 +2,35 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useNewsStyles = makeStyles({
   banner: {
-    height: '230px',
-    width: '100vw',
+    margin: '5px auto',
+    width: '95vw',
     display: 'flex',
-    background: '#000'
+    justifyContent: 'space-between',
+    background: 'rgba(255, 255, 255, .15)',
+    boxShadow: '0 0 3px #fff',
+    borderRadius: 3,
+    overflow: 'hidden'
   },
   content: {
-    height: '100%',
+    padding: 5,
+    height: 230,
     width: '75%',
-    background: 'red'
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'space-between',
+    zIndex: 5
   },
   cover: {
-    height: '100%',
+    height: 230,
     width: '25%',
-    background: 'blue'
+    display: 'flex',
+    justifyContent: 'flex-end',
+    zIndex: 4
+  },
+  tagButton: {
+    fontSize: 11,
+    fontWeight: '200',
+    marginRight: 3
   }
 });
 
