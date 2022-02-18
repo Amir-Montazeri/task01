@@ -39,7 +39,7 @@ export default function FinanceTopStories() {
             right: 0,
             width: 468,
           }}
-          src='./assests/images/banner-02.jpg'
+          src='https://www.bing.com/th?id=ORMS.0de83329612787565902ff13b5c5bec3&pid=Wdp&w=468&h=320&qlt=100&c=1&rs=1'
           alt='banner!'
           className={styles.sizes}
         />
