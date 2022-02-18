@@ -9,5 +9,6 @@ ReactDOM.render(
     <ThemeProvider theme={themes.default}>
       <App />
     </ThemeProvider>
-  </React.StrictMode>
-  , document.querySelector('#root'));
+  </React.StrictMode>,
+  document.querySelector('#root'),
+);
